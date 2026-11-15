@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VentureBridge | Pitch Now</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Venture<span>Bridge</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="problem-solution.html">Problem & Solution</a></li>
+                <li><a href="checker.html">Funding Checker</a></li>
+                <li><a href="calculator.html">Equity Calculator</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="pitch.html" class="btn-nav">Pitch Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <h1>Pitch Your Startup</h1>
+        <p>No warm introductions needed. Tell us the problem you are solving and we will reply in 14 days.</p>
+    </section>
+
+    <section class="section bg-light">
+        <form id="pitchForm" class="tool-box">
+            <div class="form-group">
+                <label for="founderName">Founder Full Name:</label>
+                <input type="text" id="founderName" required placeholder="e.g., Narayan Rai">
+            </div>
+
+            <div class="form-group">
+                <label for="founderEmail">Founder Email:</label>
+                <input type="email" id="founderEmail" required placeholder="founder@startup.com">
+            </div>
+
+            <div class="form-group">
+                <label for="startupName">Startup Name:</label>
+                <input type="text" id="startupName" required placeholder="Enter your company name">
+            </div>
+
+            <div class="form-group">
+                <label for="sector">Industry Sector:</label>
+                <select id="sector">
+                    <option value="FinTech">FinTech</option>
+                    <option value="HealthTech">HealthTech</option>
+                    <option value="AgriTech">AgriTech</option>
+                    <option value="EdTech">EdTech</option>
+                    <option value="AI / SaaS">AI / SaaS</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="problemDesc">What problem are you solving & how?</label>
+                <textarea id="problemDesc" rows="4" required placeholder="Describe the customer pain point and your solution..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary full-width">Submit Startup Pitch</button>
+
+            <p id="formMessage" class="form-feedback"></p>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 VentureBridge Capital. All Rights Reserved.</p>
+        <p style="margin-top: 0.5rem;">
+            <a href="index.html">Home</a> | 
+            <a href="problem-solution.html">Problem & Solution</a> | 
+            <a href="checker.html">Eligibility</a> | 
+            <a href="calculator.html">Equity Calculator</a> | 
+            <a href="portfolio.html">Portfolio</a> | 
+            <a href="team.html">Team</a> | 
+            <a href="faq.html">FAQ</a> | 
+            <a href="pitch.html">Pitch</a>
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VentureBridge | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Venture<span>Bridge</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="problem-solution.html">Problem & Solution</a></li>
+                <li><a href="checker.html">Funding Checker</a></li>
+                <li><a href="calculator.html">Equity Calculator</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="pitch.html" class="btn-nav">Pitch Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <h1>Our Portfolio Companies</h1>
+        <p>Real founders solving real problems across FinTech, AgriTech, HealthTech, and CleanTech.</p>
+    </section>
+
+    <section class="section">
+        <div class="filter-bar">
+            <button class="filter-btn active" onclick="filterPortfolio('all', this)">All Sectors</button>
+            <button class="filter-btn" onclick="filterPortfolio('fintech', this)">FinTech</button>
+            <button class="filter-btn" onclick="filterPortfolio('agritech', this)">AgriTech</button>
+            <button class="filter-btn" onclick="filterPortfolio('healthtech', this)">HealthTech</button>
+        </div>
+
+        <div class="grid-3" id="portfolio-grid">
+            <div class="card portfolio-item" data-sector="fintech">
+                <span class="tag">FinTech</span>
+                <h3>PayFlow</h3>
+                <p><strong>Problem:</strong> Freelancers wait 45 days for international payments.</p>
+                <p><strong>Solution:</strong> Instant cross-border invoicing. Raised $250K Pre-Seed.</p>
+            </div>
+
+            <div class="card portfolio-item" data-sector="agritech">
+                <span class="tag">AgriTech</span>
+                <h3>CropSense</h3>
+                <p><strong>Problem:</strong> Over-irrigation wastes 40% of farm water.</p>
+                <p><strong>Solution:</strong> Low-cost solar soil sensors. Raised $400K Seed.</p>
+            </div>
+
+            <div class="card portfolio-item" data-sector="healthtech">
+                <span class="tag">HealthTech</span>
+                <h3>MediQuick</h3>
+                <p><strong>Problem:</strong> Rural patients travel hours for basic blood tests.</p>
+                <p><strong>Solution:</strong> 15-minute doorstep diagnostic pickup. Raised $300K Seed.</p>
+            </div>
+
+            <div class="card portfolio-item" data-sector="fintech">
+                <span class="tag">FinTech</span>
+                <h3>LedgerLite</h3>
+                <p><strong>Problem:</strong> Small retail shops struggle with GST & tax compliance.</p>
+                <p><strong>Solution:</strong> Voice-assisted bookkeeping app. Raised $150K Pre-Seed.</p>
+            </div>
+
+            <div class="card portfolio-item" data-sector="healthtech">
+                <span class="tag">HealthTech</span>
+                <h3>MindBridge</h3>
+                <p><strong>Problem:</strong> College students lack affordable mental health access.</p>
+                <p><strong>Solution:</strong> Anonymous peer & counselor platform. Raised $200K Seed.</p>
+            </div>
+
+            <div class="card portfolio-item" data-sector="agritech">
+                <span class="tag">AgriTech</span>
+                <h3>ColdChainX</h3>
+                <p><strong>Problem:</strong> 30% of fresh produce spoils during transit.</p>
+                <p><strong>Solution:</strong> Portable micro-cold storage crates. Raised $500K Seed.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 VentureBridge Capital. All Rights Reserved.</p>
+        <p style="margin-top: 0.5rem;">
+            <a href="index.html">Home</a> | 
+            <a href="problem-solution.html">Problem & Solution</a> | 
+            <a href="checker.html">Eligibility</a> | 
+            <a href="calculator.html">Equity Calculator</a> | 
+            <a href="portfolio.html">Portfolio</a> | 
+            <a href="team.html">Team</a> | 
+            <a href="faq.html">FAQ</a> | 
+            <a href="pitch.html">Pitch</a>
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
