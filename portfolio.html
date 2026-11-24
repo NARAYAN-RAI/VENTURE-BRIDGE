@@ -7,92 +7,106 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
+    <header class="site-header">
+        <nav class="navbar" aria-label="Primary Navigation">
             <a href="index.html" class="logo">Venture<span>Bridge</span></a>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="problem-solution.html">Problem & Solution</a></li>
-                <li><a href="checker.html">Funding Checker</a></li>
-                <li><a href="calculator.html">Equity Calculator</a></li>
-                <li><a href="portfolio.html" class="active">Portfolio</a></li>
-                <li><a href="team.html">Our Team</a></li>
+                <li><a href="index.html">Overview</a></li>
+                <li><a href="problem-solution.html">Investment Thesis</a></li>
+                <li><a href="checker.html">Valuation Model</a></li>
+                <li><a href="calculator.html">Cap Table</a></li>
+                <li><a href="portfolio.html" class="active" aria-current="page">Portfolio</a></li>
+                <li><a href="team.html">Partners</a></li>
                 <li><a href="faq.html">FAQ</a></li>
-                <li><a href="pitch.html" class="btn-nav">Pitch Now</a></li>
+                <li><a href="pitch.html" class="btn-nav">Submit Pitch</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="page-header">
-        <h1>Our Portfolio Companies</h1>
-        <p>Real founders solving real problems across FinTech, AgriTech, HealthTech, and CleanTech.</p>
-    </section>
+    <main>
+        <section class="page-header">
+            <h1>Our Portfolio Companies</h1>
+            <p>Real founders solving real problems across FinTech, AgriTech, and HealthTech.</p>
+        </section>
 
-    <section class="section">
-        <div class="filter-bar">
-            <button class="filter-btn active" onclick="filterPortfolio('all', this)">All Sectors</button>
-            <button class="filter-btn" onclick="filterPortfolio('fintech', this)">FinTech</button>
-            <button class="filter-btn" onclick="filterPortfolio('agritech', this)">AgriTech</button>
-            <button class="filter-btn" onclick="filterPortfolio('healthtech', this)">HealthTech</button>
-        </div>
+        <section class="section" aria-label="Portfolio Directory">
+            <nav class="filter-bar" aria-label="Portfolio Sector Filter">
+                <button type="button" class="filter-btn active" onclick="filterPortfolio('all', this)">All Sectors</button>
+                <button type="button" class="filter-btn" onclick="filterPortfolio('fintech', this)">FinTech</button>
+                <button type="button" class="filter-btn" onclick="filterPortfolio('agritech', this)">AgriTech</button>
+                <button type="button" class="filter-btn" onclick="filterPortfolio('healthtech', this)">HealthTech</button>
+            </nav>
 
-        <div class="grid-3" id="portfolio-grid">
-            <div class="card portfolio-item" data-sector="fintech">
-                <span class="tag">FinTech</span>
-                <h3>PayFlow</h3>
-                <p><strong>Problem:</strong> Freelancers wait 45 days for international payments.</p>
-                <p><strong>Solution:</strong> Instant cross-border invoicing. Raised $250K Pre-Seed.</p>
+            <div class="grid-3" id="portfolio-grid">
+                <article class="card portfolio-item" data-sector="fintech">
+                    <div class="card-top">
+                        <span class="tag">FinTech</span>
+                        <h3>PayFlow</h3>
+                        <p><strong>Problem:</strong> Freelancers wait 45 days for international payments.</p>
+                        <p><strong>Solution:</strong> Instant cross-border invoicing. Raised $250K Pre-Seed.</p>
+                    </div>
+                </article>
+
+                <article class="card portfolio-item" data-sector="agritech">
+                    <div class="card-top">
+                        <span class="tag">AgriTech</span>
+                        <h3>CropSense</h3>
+                        <p><strong>Problem:</strong> Over-irrigation wastes 40% of farm water.</p>
+                        <p><strong>Solution:</strong> Low-cost solar soil sensors. Raised $400K Seed.</p>
+                    </div>
+                </article>
+
+                <article class="card portfolio-item" data-sector="healthtech">
+                    <div class="card-top">
+                        <span class="tag">HealthTech</span>
+                        <h3>MediQuick</h3>
+                        <p><strong>Problem:</strong> Rural patients travel hours for basic blood tests.</p>
+                        <p><strong>Solution:</strong> 15-minute doorstep diagnostic pickup. Raised $300K Seed.</p>
+                    </div>
+                </article>
+
+                <article class="card portfolio-item" data-sector="fintech">
+                    <div class="card-top">
+                        <span class="tag">FinTech</span>
+                        <h3>LedgerLite</h3>
+                        <p><strong>Problem:</strong> Small retail shops struggle with GST &amp; tax compliance.</p>
+                        <p><strong>Solution:</strong> Voice-assisted bookkeeping app. Raised $150K Pre-Seed.</p>
+                    </div>
+                </article>
+
+                <article class="card portfolio-item" data-sector="healthtech">
+                    <div class="card-top">
+                        <span class="tag">HealthTech</span>
+                        <h3>MindBridge</h3>
+                        <p><strong>Problem:</strong> College students lack affordable mental health access.</p>
+                        <p><strong>Solution:</strong> Anonymous peer &amp; counselor platform. Raised $200K Seed.</p>
+                    </div>
+                </article>
+
+                <article class="card portfolio-item" data-sector="agritech">
+                    <div class="card-top">
+                        <span class="tag">AgriTech</span>
+                        <h3>ColdChainX</h3>
+                        <p><strong>Problem:</strong> 30% of fresh produce spoils during transit.</p>
+                        <p><strong>Solution:</strong> Portable micro-cold storage crates. Raised $500K Seed.</p>
+                    </div>
+                </article>
             </div>
+        </section>
+    </main>
 
-            <div class="card portfolio-item" data-sector="agritech">
-                <span class="tag">AgriTech</span>
-                <h3>CropSense</h3>
-                <p><strong>Problem:</strong> Over-irrigation wastes 40% of farm water.</p>
-                <p><strong>Solution:</strong> Low-cost solar soil sensors. Raised $400K Seed.</p>
-            </div>
-
-            <div class="card portfolio-item" data-sector="healthtech">
-                <span class="tag">HealthTech</span>
-                <h3>MediQuick</h3>
-                <p><strong>Problem:</strong> Rural patients travel hours for basic blood tests.</p>
-                <p><strong>Solution:</strong> 15-minute doorstep diagnostic pickup. Raised $300K Seed.</p>
-            </div>
-
-            <div class="card portfolio-item" data-sector="fintech">
-                <span class="tag">FinTech</span>
-                <h3>LedgerLite</h3>
-                <p><strong>Problem:</strong> Small retail shops struggle with GST & tax compliance.</p>
-                <p><strong>Solution:</strong> Voice-assisted bookkeeping app. Raised $150K Pre-Seed.</p>
-            </div>
-
-            <div class="card portfolio-item" data-sector="healthtech">
-                <span class="tag">HealthTech</span>
-                <h3>MindBridge</h3>
-                <p><strong>Problem:</strong> College students lack affordable mental health access.</p>
-                <p><strong>Solution:</strong> Anonymous peer & counselor platform. Raised $200K Seed.</p>
-            </div>
-
-            <div class="card portfolio-item" data-sector="agritech">
-                <span class="tag">AgriTech</span>
-                <h3>ColdChainX</h3>
-                <p><strong>Problem:</strong> 30% of fresh produce spoils during transit.</p>
-                <p><strong>Solution:</strong> Portable micro-cold storage crates. Raised $500K Seed.</p>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 VentureBridge Capital. All Rights Reserved.</p>
-        <p style="margin-top: 0.5rem;">
-            <a href="index.html">Home</a> | 
-            <a href="problem-solution.html">Problem & Solution</a> | 
-            <a href="checker.html">Eligibility</a> | 
-            <a href="calculator.html">Equity Calculator</a> | 
-            <a href="portfolio.html">Portfolio</a> | 
-            <a href="team.html">Team</a> | 
-            <a href="faq.html">FAQ</a> | 
-            <a href="pitch.html">Pitch</a>
-        </p>
+    <footer class="site-footer">
+        <p>&copy; <time datetime="2026">2026</time> VentureBridge Capital Partners. Institutional Pre-Seed &amp; Seed Venture Capital.</p>
+        <nav class="footer-nav" aria-label="Footer Navigation">
+            <a href="index.html">Overview</a>
+            <a href="problem-solution.html">Investment Thesis</a>
+            <a href="checker.html">Valuation Model</a>
+            <a href="calculator.html">Cap Table</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="team.html">Partners</a>
+            <a href="faq.html">FAQ</a>
+            <a href="pitch.html">Submit Pitch</a>
+        </nav>
     </footer>
     <script src="script.js"></script>
 </body>
