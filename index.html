@@ -3,91 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VentureBridge | Home</title>
+    <title>VentureBridge Capital | Institutional Seed Investing</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
+    <header class="site-header">
+        <nav class="navbar" aria-label="Primary Navigation">
             <a href="index.html" class="logo">Venture<span>Bridge</span></a>
             <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="problem-solution.html">Problem & Solution</a></li>
-                <li><a href="checker.html">Funding Checker</a></li>
-                <li><a href="calculator.html">Equity Calculator</a></li>
+                <li><a href="index.html" class="active" aria-current="page">Overview</a></li>
+                <li><a href="problem-solution.html">Investment Thesis</a></li>
+                <li><a href="checker.html">Valuation Model</a></li>
+                <li><a href="calculator.html">Cap Table</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="team.html">Our Team</a></li>
+                <li><a href="team.html">Partners</a></li>
                 <li><a href="faq.html">FAQ</a></li>
-                <li><a href="pitch.html" class="btn-nav">Pitch Now</a></li>
+                <li><a href="pitch.html" class="btn-nav">Submit Pitch</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Bridging the Gap Between Bold Ideas & Capital</h1>
-            <p>We solve the early-stage startup funding crisis with 14-day term sheets, transparent equity terms, and hands-on founder mentorship.</p>
-            <a href="checker.html" class="btn-primary">Check Funding Eligibility</a>
-            <a href="problem-solution.html" class="btn-outline">Our Problem-Solution Model</a>
-        </div>
-    </section>
+    <main>
+        <section class="hero" aria-labelledby="hero-heading">
+            <div class="hero-content">
+                <p class="eyebrow">Institutional Pre-Seed &amp; Seed Capital</p>
+                <h1 id="hero-heading">Disciplined Capital for Early-Stage Technical Founders</h1>
+                <p>We partner with founders from prototype to Series A readiness through transparent revenue valuation multiples, <time datetime="P14D">14-day</time> investment decisions, and balanced cap table structures.</p>
+                <nav class="action-group" aria-label="Primary Actions">
+                    <a href="checker.html" class="btn-primary">Run Valuation Model</a>
+                    <a href="calculator.html" class="btn-outline">Cap Table Simulator</a>
+                </nav>
+            </div>
+        </section>
 
-    <section class="section bg-light">
-        <h2 class="section-title">VentureBridge by the Numbers</h2>
-        <div class="grid-4">
-            <div class="stat-card">
-                <h2>$45M+</h2>
-                <p>Seed Capital Deployed</p>
+        <section class="section" aria-labelledby="metrics-heading">
+            <div class="section-header">
+                <h2 id="metrics-heading" class="section-title">Firm Track Record</h2>
+                <p class="section-subtitle">Long-term institutional alignment across our early-stage funds.</p>
             </div>
-            <div class="stat-card">
-                <h2>62</h2>
-                <p>Startups Funded</p>
+            <div class="grid-4">
+                <figure class="stat-card">
+                    <h2><data value="45000000">$45M+</data></h2>
+                    <figcaption><p>Assets Under Management</p></figcaption>
+                </figure>
+                <figure class="stat-card">
+                    <h2><data value="62">62</data></h2>
+                    <figcaption><p>Portfolio Companies</p></figcaption>
+                </figure>
+                <figure class="stat-card">
+                    <h2><time datetime="P14D">14 Days</time></h2>
+                    <figcaption><p>Term Sheet Turnaround</p></figcaption>
+                </figure>
+                <figure class="stat-card">
+                    <h2><data value="88">88%</data></h2>
+                    <figcaption><p>Series A Graduation Rate</p></figcaption>
+                </figure>
             </div>
-            <div class="stat-card">
-                <h2>14 Days</h2>
-                <p>Average Decision Time</p>
-            </div>
-            <div class="stat-card">
-                <h2>88%</h2>
-                <p>Series A Follow-on Rate</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="section">
-        <h2 class="section-title">Explore Our Platform</h2>
-        <p class="section-subtitle">Tools and resources built specifically for early-stage founders.</p>
-        <div class="grid-3">
-            <div class="card">
-                <h3>1. The Startup Gap</h3>
-                <p>Learn why 70% of startups fail before Series A and how VentureBridge fixes broken VC timelines.</p><br>
-                <a href="problem-solution.html" style="color:#10b981; font-weight:bold;">Read Our Thesis &rarr;</a>
+        <section class="section bg-band" aria-labelledby="suite-heading">
+            <div class="section-inner">
+                <div class="section-header">
+                    <h2 id="suite-heading" class="section-title">Analytical Founder Suite</h2>
+                    <p class="section-subtitle">Quantitative models designed to bring transparency to early-stage fundraising.</p>
+                </div>
+                <div class="grid-3">
+                    <article class="card">
+                        <div class="card-top">
+                            <span class="tag">01 / Thesis</span>
+                            <h3>The Early-Stage Capital Gap</h3>
+                            <p>An institutional analysis of why 70% of seed-stage ventures fail to bridge the gap to Series A—and how standardized terms solve it.</p>
+                        </div>
+                        <a href="problem-solution.html" class="card-link">Read Investment Thesis &rarr;</a>
+                    </article>
+                    <article class="card">
+                        <div class="card-top">
+                            <span class="tag">02 / Valuation</span>
+                            <h3>ARR Multiple &amp; Check Sizing</h3>
+                            <p>Compute your implied pre-money valuation (5x, 10x, 15x ARR) and eligible check size based on annual revenue and net profitability.</p>
+                        </div>
+                        <a href="checker.html" class="card-link">Open Valuation Model &rarr;</a>
+                    </article>
+                    <article class="card">
+                        <div class="card-top">
+                            <span class="tag">03 / Governance</span>
+                            <h3>Dilution &amp; Cap Table Model</h3>
+                            <p>Simulate post-money ownership, prior investor dilution, and board governance thresholds before executing a term sheet.</p>
+                        </div>
+                        <a href="calculator.html" class="card-link">Launch Cap Table Tool &rarr;</a>
+                    </article>
+                </div>
             </div>
-            <div class="card">
-                <h3>2. Funding Readiness Tool</h3>
-                <p>Use our interactive JavaScript tool to check which investment track fits your current revenue.</p><br>
-                <a href="checker.html" style="color:#10b981; font-weight:bold;">Test Eligibility &rarr;</a>
-            </div>
-            <div class="card">
-                <h3>3. Equity Dilution Calculator</h3>
-                <p>Calculate exact post-money valuation and founder ownership before signing any term sheet.</p><br>
-                <a href="calculator.html" style="color:#10b981; font-weight:bold;">Calculate Equity &rarr;</a>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <footer>
-        <p>&copy; 2026 VentureBridge Capital. All Rights Reserved.</p>
-        <p style="margin-top: 0.5rem;">
-            <a href="index.html">Home</a> | 
-            <a href="problem-solution.html">Problem & Solution</a> | 
-            <a href="checker.html">Eligibility</a> | 
-            <a href="calculator.html">Equity Calculator</a> | 
-            <a href="portfolio.html">Portfolio</a> | 
-            <a href="team.html">Team</a> | 
-            <a href="faq.html">FAQ</a> | 
-            <a href="pitch.html">Pitch</a>
-        </p>
+    <footer class="site-footer">
+        <p>&copy; <time datetime="2026">2026</time> VentureBridge Capital Partners. Institutional Pre-Seed &amp; Seed Venture Capital.</p>
+        <nav class="footer-nav" aria-label="Footer Navigation">
+            <a href="index.html">Overview</a>
+            <a href="problem-solution.html">Investment Thesis</a>
+            <a href="checker.html">Valuation Model</a>
+            <a href="calculator.html">Cap Table</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="team.html">Partners</a>
+            <a href="faq.html">FAQ</a>
+            <a href="pitch.html">Submit Pitch</a>
+        </nav>
     </footer>
     <script src="script.js"></script>
 </body>
