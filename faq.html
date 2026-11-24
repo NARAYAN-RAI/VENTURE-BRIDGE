@@ -7,63 +7,67 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
+    <header class="site-header">
+        <nav class="navbar" aria-label="Primary Navigation">
             <a href="index.html" class="logo">Venture<span>Bridge</span></a>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="problem-solution.html">Problem & Solution</a></li>
-                <li><a href="checker.html">Funding Checker</a></li>
-                <li><a href="calculator.html">Equity Calculator</a></li>
+                <li><a href="index.html">Overview</a></li>
+                <li><a href="problem-solution.html">Investment Thesis</a></li>
+                <li><a href="checker.html">Valuation Model</a></li>
+                <li><a href="calculator.html">Cap Table</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="team.html">Our Team</a></li>
-                <li><a href="faq.html" class="active">FAQ</a></li>
-                <li><a href="pitch.html" class="btn-nav">Pitch Now</a></li>
+                <li><a href="team.html">Partners</a></li>
+                <li><a href="faq.html" class="active" aria-current="page">FAQ</a></li>
+                <li><a href="pitch.html" class="btn-nav">Submit Pitch</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="page-header">
-        <h1>Frequently Asked Questions</h1>
-        <p>Click any question below to view how our funding process works.</p>
-    </section>
+    <main>
+        <section class="page-header">
+            <h1>Frequently Asked Questions</h1>
+            <p>Click any question below to view how our formulas and funding process work.</p>
+        </section>
 
-    <section class="section bg-light">
-        <div style="max-width: 750px; margin: 0 auto;">
-            <div class="faq-item">
-                <button class="faq-question" onclick="toggleFaq(this)">1. Do I need revenue before applying? <span>+</span></button>
-                <div class="faq-answer">No. Through our VentureBridge Launchpad track, we fund pre-revenue startups that have a working prototype and clear customer validation.</div>
+        <section class="section bg-band" aria-label="Frequently Asked Questions">
+            <div class="section-inner">
+                <div class="faq-list">
+                    <article class="faq-item">
+                        <button type="button" class="faq-question" onclick="toggleFaq(this)">1. How do you calculate startup valuation? <span>+</span></button>
+                        <div class="faq-answer"><p>We use realistic industry multiples on Yearly Revenue (ARR): a $250K base cap for Idea stage, 5x ARR for Pre-Seed, and 10x–15x ARR for Working startups (plus a 2x bonus on net yearly profit).</p></div>
+                    </article>
+
+                    <article class="faq-item">
+                        <button type="button" class="faq-question" onclick="toggleFaq(this)">2. How is the funding check amount decided? <span>+</span></button>
+                        <div class="faq-answer"><p>Idea stage startups receive a fixed $50,000 Launchpad grant. Pre-Seed startups receive 15% of their valuation (capped at $250K), and Working startups receive 12% of their valuation plus 50% of their yearly net profit (capped at $1M).</p></div>
+                    </article>
+
+                    <article class="faq-item">
+                        <button type="button" class="faq-question" onclick="toggleFaq(this)">3. What happens if we already gave away equity to angel investors? <span>+</span></button>
+                        <div class="faq-answer"><p>Our Smart Equity Calculator subtracts both existing investor shares and new round dilution so you can verify that founders still retain over 50% majority control.</p></div>
+                    </article>
+
+                    <article class="faq-item">
+                        <button type="button" class="faq-question" onclick="toggleFaq(this)">4. How fast is the investment decision? <span>+</span></button>
+                        <div class="faq-answer"><p>Every pitch submitted on our Submit Pitch page receives a guaranteed decision within <time datetime="P14D">14 calendar days</time>.</p></div>
+                    </article>
+                </div>
             </div>
+        </section>
+    </main>
 
-            <div class="faq-item">
-                <button class="faq-question" onclick="toggleFaq(this)">2. How does the 14-day decision guarantee work? <span>+</span></button>
-                <div class="faq-answer">Once you submit your pitch on our Pitch Now page, our partners review it within 5 days, schedule one 30-minute founder call, and issue a final decision by Day 14.</div>
-            </div>
-
-            <div class="faq-item">
-                <button class="faq-question" onclick="toggleFaq(this)">3. How much equity does VentureBridge take? <span>+</span></button>
-                <div class="faq-answer">Our standard seed checks range from $50K to $500K for 7% to 12% equity, ensuring founders keep majority ownership for future funding rounds.</div>
-            </div>
-
-            <div class="faq-item">
-                <button class="faq-question" onclick="toggleFaq(this)">4. Can solo founders apply? <span>+</span></button>
-                <div class="faq-answer">Yes! While we love balanced co-founding teams, we actively back strong solo founders and help them recruit technical or business co-founders.</div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 VentureBridge Capital. All Rights Reserved.</p>
-        <p style="margin-top: 0.5rem;">
-            <a href="index.html">Home</a> | 
-            <a href="problem-solution.html">Problem & Solution</a> | 
-            <a href="checker.html">Eligibility</a> | 
-            <a href="calculator.html">Equity Calculator</a> | 
-            <a href="portfolio.html">Portfolio</a> | 
-            <a href="team.html">Team</a> | 
-            <a href="faq.html">FAQ</a> | 
-            <a href="pitch.html">Pitch</a>
-        </p>
+    <footer class="site-footer">
+        <p>&copy; <time datetime="2026">2026</time> VentureBridge Capital Partners. Institutional Pre-Seed &amp; Seed Venture Capital.</p>
+        <nav class="footer-nav" aria-label="Footer Navigation">
+            <a href="index.html">Overview</a>
+            <a href="problem-solution.html">Investment Thesis</a>
+            <a href="checker.html">Valuation Model</a>
+            <a href="calculator.html">Cap Table</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="team.html">Partners</a>
+            <a href="faq.html">FAQ</a>
+            <a href="pitch.html">Submit Pitch</a>
+        </nav>
     </footer>
     <script src="script.js"></script>
 </body>
