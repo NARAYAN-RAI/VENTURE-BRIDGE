@@ -3,63 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VentureBridge | Our Team</title>
+    <title>VentureBridge | Partners</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
+    <header class="site-header">
+        <nav class="navbar" aria-label="Primary Navigation">
             <a href="index.html" class="logo">Venture<span>Bridge</span></a>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="problem-solution.html">Problem & Solution</a></li>
-                <li><a href="checker.html">Funding Checker</a></li>
-                <li><a href="calculator.html">Equity Calculator</a></li>
+                <li><a href="index.html">Overview</a></li>
+                <li><a href="problem-solution.html">Investment Thesis</a></li>
+                <li><a href="checker.html">Valuation Model</a></li>
+                <li><a href="calculator.html">Cap Table</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="team.html" class="active">Our Team</a></li>
+                <li><a href="team.html" class="active" aria-current="page">Partners</a></li>
                 <li><a href="faq.html">FAQ</a></li>
-                <li><a href="pitch.html" class="btn-nav">Pitch Now</a></li>
+                <li><a href="pitch.html" class="btn-nav">Submit Pitch</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="page-header">
-        <h1>Operators, Not Just Bankers</h1>
-        <p>Every partner at VentureBridge has founded, scaled, and exited a technology company.</p>
-    </section>
+    <main>
+        <section class="page-header">
+            <h1>Operators, Not Just Bankers</h1>
+            <p>Every partner at VentureBridge has founded, scaled, and exited a technology company.</p>
+        </section>
 
-    <section class="section">
-        <div class="grid-3">
-            <div class="card">
-                <span class="tag">Managing Partner</span>
-                <h3>Aarav Sharma</h3>
-                <p>Former FinTech founder (acquired in 2023). Leads seed investments and go-to-market strategy.</p>
+        <section class="section" aria-label="Managing Partners">
+            <div class="grid-3">
+                <article class="card">
+                    <div class="card-top">
+                        <span class="tag">Managing Partner</span>
+                        <h3>Aarav Sharma</h3>
+                        <p>Former FinTech founder (acquired in <time datetime="2023">2023</time>). Leads seed investments and go-to-market strategy.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-top">
+                        <span class="tag">General Partner</span>
+                        <h3>Meera Nair</h3>
+                        <p>12+ years scaling SaaS and HealthTech products across Asia. Leads product mentorship.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-top">
+                        <span class="tag">Head of Founder Success</span>
+                        <h3>Rohan Verma</h3>
+                        <p>Helps portfolio startups hire their first 10 engineers and prepare for Series A rounds.</p>
+                    </div>
+                </article>
             </div>
-            <div class="card">
-                <span class="tag">General Partner</span>
-                <h3>Meera Nair</h3>
-                <p>12+ years scaling SaaS and HealthTech products across Asia. Leads product mentorship.</p>
-            </div>
-            <div class="card">
-                <span class="tag">Head of Founder Success</span>
-                <h3>Rohan Verma</h3>
-                <p>Helps portfolio startups hire their first 10 engineers and prepare for Series A rounds.</p>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <footer>
-        <p>&copy; 2026 VentureBridge Capital. All Rights Reserved.</p>
-        <p style="margin-top: 0.5rem;">
-            <a href="index.html">Home</a> | 
-            <a href="problem-solution.html">Problem & Solution</a> | 
-            <a href="checker.html">Eligibility</a> | 
-            <a href="calculator.html">Equity Calculator</a> | 
-            <a href="portfolio.html">Portfolio</a> | 
-            <a href="team.html">Team</a> | 
-            <a href="faq.html">FAQ</a> | 
-            <a href="pitch.html">Pitch</a>
-        </p>
+    <footer class="site-footer">
+        <p>&copy; <time datetime="2026">2026</time> VentureBridge Capital Partners. Institutional Pre-Seed &amp; Seed Venture Capital.</p>
+        <nav class="footer-nav" aria-label="Footer Navigation">
+            <a href="index.html">Overview</a>
+            <a href="problem-solution.html">Investment Thesis</a>
+            <a href="checker.html">Valuation Model</a>
+            <a href="calculator.html">Cap Table</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="team.html">Partners</a>
+            <a href="faq.html">FAQ</a>
+            <a href="pitch.html">Submit Pitch</a>
+        </nav>
     </footer>
     <script src="script.js"></script>
 </body>
